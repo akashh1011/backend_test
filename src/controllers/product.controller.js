@@ -153,7 +153,7 @@ const updateProduct = asyncHandler(async (req, res) => {
     if (newNameNormalized === "") {
       throw new ApiError(400, "Product name cannot be empty.");
     }
-    updateFields.name = newNameNormalized;
+    updateFields.name = newNameNormalized
   }
 
   if (stock !== undefined) {
